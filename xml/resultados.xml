@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../xsd/resultados.xsd">
+    <jornada>
+        <fecha>2026-09-27</fecha>
+
+        <partido id="P001" estado="finalizado">
+            <equipoLocal>Pumas UNAM</equipoLocal>
+            <equipoVisitante>Atlético de San Luis</equipoVisitante>
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>3</golesVisitante>
+            </marcador>
+            <estadisticas>
+                <posesion>
+                    <local>48%</local>
+                    <visitante>52%</visitante>
+                </posesion>
+                <tiros>
+                    <local>12</local>
+                    <visitante>11</visitante>
+                </tiros>
+                <tirosAPuerta>
+                    <local>5</local>
+                    <visitante>6</visitante>
+                </tirosAPuerta>
+                <faltas>
+                    <local>10</local>
+                    <visitante>13</visitante>
+                </faltas>
+                <tarjetas>
+                    <amarillas>
+                        <local>1</local>
+                        <visitante>2</visitante>
+                    </amarillas>
+                    <rojas>
+                        <local>0</local>
+                        <visitante>0</visitante>
+                    </rojas>
+                </tarjetas>
+                <tirosDeEsquina>
+                    <local>6</local>
+                    <visitante>4</visitante>
+                </tirosDeEsquina>
+            </estadisticas>
+        </partido>
+
+        <partido id="P002" estado="finalizado">
+            <equipoLocal>León</equipoLocal>
+            <equipoVisitante>FC Juárez</equipoVisitante>
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>1</golesVisitante>
+            </marcador>
+            <estadisticas>
+                <posesion>
+                    <local>55%</local>
+                    <visitante>45%</visitante>
+                </posesion>
+                <tiros>
+                    <local>14</local>
+                    <visitante>9</visitante>
+                </tiros>
+                <tirosAPuerta>
+                    <local>7</local>
+                    <visitante>3</visitante>
+                </tirosAPuerta>
+                <faltas>
+                    <local>11</local>
+                    <visitante>14</visitante>
+                </faltas>
+                <tarjetas>
+                    <amarillas>
+                        <local>2</local>
+                        <visitante>2</visitante>
+                    </amarillas>
+                    <rojas>
+                        <local>0</local>
+                        <visitante>0</visitante>
+                    </rojas>
+                </tarjetas>
+                <tirosDeEsquina>
+                    <local>5</local>
+                    <visitante>3</visitante>
+                </tirosDeEsquina>
+            </estadisticas>
+        </partido>
+
+        <partido id="P003" estado="finalizado">
+            <equipoLocal>Necaxa</equipoLocal>
+            <equipoVisitante>Club América</equipoVisitante>
+            <marcador>
+                <golesLocal>2</golesLocal>
+                <golesVisitante>4</golesVisitante>
+            </marcador>
+            <estadisticas>
+                <posesion>
+                    <local>40%</local>
+                    <visitante>60%</visitante>
+                </posesion>
+                <tiros>
+                    <local>8</local>
+                    <visitante>16</visitante>
+                </tiros>
+                <tirosAPuerta>
+                    <local>4</local>
+                    <visitante>9</visitante>
+                </tirosAPuerta>
+                <faltas>
+                    <local>15</local>
+                    <visitante>10</visitante>
+                </faltas>
+                <tarjetas>
+                    <amarillas>
+                        <local>3</local>
+                        <visitante>2</visitante>
+                    </amarillas>
+                    <rojas>
+                        <local>0</local>
+                        <visitante>0</visitante>
+                    </rojas>
+                </tarjetas>
+                <tirosDeEsquina>
+                    <local>3</local>
+                    <visitante>7</visitante>
+                </tirosDeEsquina>
+            </estadisticas>
+        </partido>
+
+    </jornada>
+</liga>

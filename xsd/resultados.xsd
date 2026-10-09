@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="tipoLocalVisitante">
+        <xs:sequence>
+            <xs:element name="local" type="xs:string"/>
+            <xs:element name="visitante" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="liga">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jornada" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fecha" type="xs:date"/>
+                            <xs:element name="partido" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="equipoLocal" type="xs:string"/>
+                                        <xs:element name="equipoVisitante" type="xs:string"/>
+                                        <xs:element name="marcador">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="golesLocal" type="xs:integer"/>
+                                                    <xs:element name="golesVisitante" type="xs:integer"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="estadisticas" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="posesion" type="tipoLocalVisitante" minOccurs="0"/>
+                                                    <xs:element name="tiros" type="tipoLocalVisitante" minOccurs="0"/>
+                                                    <xs:element name="tirosAPuerta" type="tipoLocalVisitante" minOccurs="0"/>
+                                                    <xs:element name="faltas" type="tipoLocalVisitante" minOccurs="0"/>
+                                                    <xs:element name="tarjetas" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="amarillas" type="tipoLocalVisitante" minOccurs="0"/>
+                                                                <xs:element name="rojas" type="tipoLocalVisitante" minOccurs="0"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="tirosDeEsquina" type="tipoLocalVisitante" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                                    <xs:attribute name="estado" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="finalizado"/>
+                                                <xs:enumeration value="en_juego"/>
+                                                <xs:enumeration value="suspendido"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
